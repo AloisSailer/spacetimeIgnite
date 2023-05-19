@@ -1,6 +1,7 @@
 import { User } from 'lucide-react'
 import Image from 'next/image'
 import nlwLogo from '../assets/nlw-spacetime-logo.svg'
+import { Copyright } from '@/components/Copyright'
 
 export default function Home() {
   return (
@@ -42,17 +43,7 @@ export default function Home() {
             CADASTRAR LEMBRANÇA
           </a>
         </div>
-        <div className="text-sm leading-relaxed text-gray-200">
-          Feito com 💜 no NLW da{' '}
-          <a
-            target="_blank"
-            rel="noreferrer"
-            className="underline hover:text-gray-100"
-            href="https://rocketseat.com.br"
-          >
-            Rocketseat
-          </a>
-        </div>
+        <Copyright />
       </div>
       {/* Right */}
       <div className="flex flex-col bg-[url(../assets/bg-stars.svg)] bg-cover p-16">
